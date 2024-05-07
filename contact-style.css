@@ -1,0 +1,304 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(250, 194, 40);
+    height: 66px;
+
+}
+header * {
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section Styles */
+main {
+    width: 80%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Contact Form Styles */
+form {
+    background: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #947900;
+    color: #ffffff;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #004a7c;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        width: 95%;
+    }
+}
+
+/* Adding previously provided CSS for general site styling */
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: oneday;
+    src: url("../fonts/ONEDAY.ttf");
+}
+
+@font-face {
+    font-family: aqua;
+    src: url("../fonts/aqua.ttf");
+}
+
+@font-face {
+    font-family: modeka;
+    src: url("../fonts/Modeka.otf");
+}
+
+@font-face {
+    font-family: lombok;
+    src: url("../fonts/Lombok\ Regular.ttf");
+}
+
+@font-face {
+    font-family: higher;
+    src: url("../fonts/Higher.ttf");
+}
+
+@font-face {
+    font-family: typewcond;
+    src: url("../fonts/typewcond_regular.otf");
+}
+
+body {
+    background-color: rgb(18, 19, 3, 0.795);
+    font-family: oneday, serif;
+    font-size: large;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+h2, h3, h5, h6 {
+    font-family: oneday, serif;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+}
+
+h4 {
+    font-family: typewcond, serif;
+    font-size: xx-large;
+    color: rgb(229, 241, 240);
+    margin: 5px;
+    font-weight: 1000;
+}
+
+header {
+    background-color: rgb(250, 194, 40);
+    height: 66px;
+}
+
+header * {
+    color: white;
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text span {
+    color: rgb(255, 254, 172);
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 88888;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+}
+
+header ul li ul li a.logout {
+    color: rgb(241, 87, 87);
+}
+
+header ul li ul li a:hover {
+    background: rgb(88, 86, 86);
+}
+
+header ul li a {
+    display:block;
+    padding: 21px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color:rgb(155, 134, 41);
+    transition: 0.5s;
+}
+@media only screen and (max-width: 750px) {
+    header {
+        position: relative;
+    }
+
+    header ul {
+        width: 100%;
+        background: rgb(226, 177, 14);
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .showing{
+        max-height: 100em;
+    
+    }
+
+    header ul li {
+        width: 100%;
+    }
+
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+
+    header ul li ul li a {
+        padding: 10px;
+        background: rgb(204, 161, 19);
+        color: white;
+        padding-left: 50px;
+    }
+
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 1.5em;
+        
+    }
+    header .logo {
+        float: left;
+        height: inherit;
+        margin-left: .8em;
+    
+    
+    }
+    .post-wrapper{
+        width: 20px;
+    }
+    
+}
